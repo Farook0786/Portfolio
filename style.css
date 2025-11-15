@@ -458,7 +458,15 @@ a:hover {
     #projRight {
         right: 5px;
     }
+  /* === HIDE PROJECT NAV BUTTONS ON MOBILE === */
+
+    #projLeft,
+    #projRight {
+        display: none !important;
+    }
+
 }
+
 
 
 

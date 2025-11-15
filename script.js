@@ -36,3 +36,25 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   });
 });
+
+
+
+// === PROJECTS SLIDER ===
+const projTrack = document.getElementById("projTrack");
+const projLeft = document.getElementById("projLeft");
+const projRight = document.getElementById("projRight");
+
+let projIndex = 0;
+
+projRight.addEventListener("click", () => {
+  const cardWidth = document.querySelector(".project-card").offsetWidth + 30; 
+  projIndex++;
+  projTrack.style.transform = `translateX(-${projIndex * cardWidth}px)`;
+});
+
+projLeft.addEventListener("click", () => {
+  if (projIndex > 0) projIndex--;
+  const cardWidth = document.querySelector(".project-card").offsetWidth + 30;
+  projTrack.style.transform = `translateX(-${projIndex * cardWidth}px)`;
+});
+

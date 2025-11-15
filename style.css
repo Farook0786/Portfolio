@@ -6,6 +6,66 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   scroll-behavior: smooth; /* smooth scrolling */
 }
+/* ============ PREMIUM NAVBAR ============ */
+.navbar {
+    padding: 15px 0;
+    background: #151a1f !important; /* smoother dark */
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* BRAND NAME */
+.premium-name {
+
+  transition: 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1.85rem;
+  
+}
+
+.premium-name:hover {
+    text-shadow: 0 0 12px rgba(52, 211, 153, 0.7);
+    transform: translateY(-2px);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #e5e5e5 !important;
+    padding: 8px 15px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+    color: #34d399 !important;
+    text-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+}
+
+/* ACTIVE LINK (when clicked) */
+.navbar-nav .nav-link.active {
+    color: #34d399 !important;
+}
+
+/* Underline animation */
+.navbar-nav .nav-link::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #34d399;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 60%;
+}
 
 /* NAVBAR */
 .navbar-dark .navbar-brand {
@@ -39,8 +99,11 @@ body {
   border: none;
 }
 .carousel-item .btn-success:hover {
-  background-color: #34d399;
+    background-color: #10b981 !important;
+    box-shadow: 0 0 15px rgba(16,185,129,0.45);
+    transform: scale(1.03);
 }
+
 
 /* SECTION HEADINGS */
 section h2 {
@@ -88,3 +151,248 @@ a:hover {
     padding: 10px;
   }
 }
+
+#achievements {
+  scroll-margin-top: 60px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#achievements img {
+  width: 90%;
+  max-width: 450px;  /* limits the image size on larger screens */
+  height: auto;
+  border: 2px solid rgba(0, 255, 100, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+
+#achievements img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 25px rgba(0, 255, 100, 0.3);
+}
+
+#achievements h4 {
+  font-weight: 600;
+}
+
+#achievements p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===== Certificates Carousel (Working Version) ===== */
+.cert-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.certificate-carousel {
+  width: 80%;
+  overflow: hidden;
+}
+
+.certificate-track {
+  display: flex;
+  gap: 25px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.certificate {
+  background: #1f2937;
+  padding: 15px;
+  border-radius: 10px;
+  width: 240px;
+  flex: 0 0 auto;
+  text-align: center;
+  border: 1px solid rgba(110, 231, 183, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.certificate:hover {
+  transform: scale(1.05);
+}
+
+.certificate img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.cert-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(110,231,183,0.1);
+  border: 1px solid rgba(110,231,183,0.4);
+  color: #6ee7b7;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  font-size: 1.4rem;
+}
+
+.cert-btn:hover {
+  background: rgba(110,231,183,0.3);
+  transform: scale(1.15);
+}
+/* FIX: Keep certificates inside section */
+#certificates {
+  overflow: hidden; 
+  position: relative;
+  padding-bottom: 30px;
+}
+
+/* FIX: Center the carousel area */
+.certificate-carousel {
+  margin: 0 auto;
+}
+
+/* FIX: Prevent track from overflowing bottom */
+.certificate-track {
+  padding-bottom: 10px;
+}
+
+
+/* === HERO CAROUSEL NAV BUTTONS (GREEN THEME) === */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important; /* remove default arrow */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(16, 185, 129, 0.8); /* green button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #10b981;
+  transition: 0.3s ease;
+}
+
+/* white arrow shape */
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.carousel-control-prev-icon::after {
+  transform: rotate(-135deg);
+}
+
+.carousel-control-next-icon::after {
+  transform: rotate(45deg);
+}
+
+/* hover animation */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #10b981; /* brighter green */
+  transform: scale(1.1);
+}
+
+/* Fix unwanted large gaps between sections */
+.portfolio-section {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* OPTIONAL: Remove any leftover padding Bootstrap adds */
+#achievements,
+#experience {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-top: 40px !important;
+}
+
+
+/* === PROJECTS SLIDER === */
+
+/* Wrapper */
+.projects-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Carousel viewport */
+.projects-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Track */
+.projects-track {
+  display: flex;
+  gap: 30px;          /* ⭐ Add spacing between cards */
+  transition: transform 0.5s ease-in-out;
+  padding: 10px;
+}
+
+/* Individual project card */
+.project-card {
+  width: 48%;           /* ⭐ Two cards per row */
+  min-width: 48%;       /* ⭐ Important for slider movement */
+  height: 500px;        /* ⭐ FIXED HEIGHT for all cards */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+/* Ensure content scrolls only inside, not break layout */
+.project-card .card-body {
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Scrollbar styling (optional) */
+.project-card .card-body::-webkit-scrollbar {
+  width: 6px;
+}
+.project-card .card-body::-webkit-scrollbar-thumb {
+  background: #6ee7b7;
+  border-radius: 10px;
+}
+
+/* Navigation buttons */
+.projects-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: rgba(110,231,183,0.1);
+  border: 1px solid rgba(110,231,183,0.4);
+  color: #6ee7b7;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+
+
+
+
+

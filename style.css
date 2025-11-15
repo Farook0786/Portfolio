@@ -464,11 +464,15 @@ a:hover {
     #projRight {
         display: none !important;
     }
-    .carousel-control-prev,
-    .carousel-control-next {
+ #heroCarousel .carousel-control-prev,
+    #heroCarousel .carousel-control-next {
         display: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
     }
 }
+
 
 
 

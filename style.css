@@ -390,6 +390,28 @@ a:hover {
   cursor: pointer;
 }
 
+/* Mobile Fix for Project Cards */
+@media (max-width: 768px) {
+    .project-card {
+        min-width: 85% !important; /* full-width cards */
+        max-width: 85% !important;
+        height: auto !important;
+        white-space: normal !important;
+        padding: 20px !important;
+    }
+
+    .projects-wrapper {
+        overflow-x: scroll !important;
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Show only 1 arrow per side centered vertically */
+    .project-nav {
+        top: 50% !important;
+        transform: translateY(-50%);
+    }
+}
 
 
 

@@ -437,6 +437,18 @@ a:hover {
         padding: 20px !important;
         white-space: normal;
     }
+.project-card .btn {
+    position: sticky;
+    bottom: 0;
+    margin-top: 10px;
+    z-index: 10;
+    background: #1f2937;
+    padding: 8px 14px;
+} 
+.projects-btn:hover {
+  background: rgba(110,231,183,0.3);
+  transform: scale(1.15);
+}
 
     /* Show both navigation buttons on mobile */
     #projLeft,
@@ -465,6 +477,7 @@ a:hover {
     }
 
 }
+
 
 
 

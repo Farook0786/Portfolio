@@ -391,19 +391,36 @@ a:hover {
 }
 
 /* Mobile Fix for Project Cards */
+/* === FINAL MOBILE FIX FOR PROJECTS === */
 @media (max-width: 768px) {
+
+    /* Show ONE CARD per slide */
     .project-card {
-        flex: 0 0 85%;
+        width: 90% !important;
+        min-width: 90% !important;
+        max-width: 90% !important;
+        height: auto !important;
+        margin-right: 20px;
+        white-space: normal !important;
     }
 
+    /* Track behaves like a scroll row */
+    .projects-track {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Wrapper scroll enabled */
     .projects-wrapper {
-        overflow-x: auto;
-        gap: 15px;
+        overflow-x: auto !important;
+        scroll-behavior: smooth;
+    }
+
+    /* Hide navigation buttons on mobile (optional) */
+    #projLeft, #projRight {
+        display: none;
     }
 }
-
-
-
 
 
 

@@ -412,52 +412,55 @@ a:hover {
   border-radius: 10px;
 }
 /* Mobile */
-/* === FINAL MOBILE FIX FOR PROJECTS === */
+/* === PERFECT MOBILE FIX FOR PROJECTS SECTION === */
 @media (max-width: 768px) {
 
-    /* Show ONE CARD per slide */
+    /* Enable touch swipe */
+    .projects-carousel {
+        overflow-x: auto !important;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Horizontal row of cards */
+    .projects-track {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        gap: 20px !important;
+    }
+
+    /* One card fills most of the screen */
     .project-card {
-        width: 90% !important;
         min-width: 90% !important;
         max-width: 90% !important;
         height: auto !important;
-        margin-right: 20px;
         white-space: normal !important;
     }
 
-    /* Track behaves like a scroll row */
-    .projects-track {
-        display: flex;
-        gap: 20px;
-    }
-.projects-btn {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: rgba(110,231,183,0.1);
-  border: 1px solid rgba(110,231,183,0.4);
-  color: #6ee7b7;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease;
-  font-size: 1.4rem;
-} 
-.projects-btn:hover {
-  background: rgba(110,231,183,0.3);
-  transform: scale(1.15);
-}
-
-    /* Wrapper scroll enabled */
+    /* Wrapper should NOT scroll */
     .projects-wrapper {
-        overflow-x: auto !important;
-        scroll-behavior: smooth;
+        overflow: visible !important;
     }
 
-    /* Hide navigation buttons on mobile (optional) */
+    /* Make buttons visible & centered vertically */
+    #projLeft, #projRight {
+        display: flex !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
 
+    #projLeft {
+        left: 5px;
+    }
+
+    #projRight {
+        right: 5px;
+    }
 }
+
+
 
 
 

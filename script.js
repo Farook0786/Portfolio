@@ -67,7 +67,6 @@ projLeft.addEventListener("click", () => {
   updateProjects();
 });
 
-
 // === CERTIFICATES CAROUSEL ===
 let certIndex = 0;
 
@@ -96,4 +95,3 @@ setInterval(() => {
   certIndex = (certIndex + 1) % certItems.length;
   updateCertificateCarousel();
 }, 4000);
-

@@ -7,6 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -14,17 +17,20 @@
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">Farook Mohammad</a>
+   <a class="navbar-brand premium-name" href="index.html"><i class="bi bi-gem me-2"></i> Farook <span class="highlight">Mohammad</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificates">Certification</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -34,24 +40,24 @@
 <!-- HERO CAROUSEL -->
 <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
   <div class="carousel-inner">
-    <div class="carousel-item active vh-100 d-flex align-items-center justify-content-center text-center bg-dark">
-      <div>
-        <img src="assets/photo.jpg" class="rounded-circle mb-4 shadow" width="150" height="150" alt="Farook Mohammad">
+    <div class="carousel-item active vh-100 d-flex align-items-center justify-content-center bg-dark text-center">
+      <div class="text-light">
+        <img src="assets/photo.jpg" class="rounded-circle mb-4 shadow" alt="Farook Mohammad" width="200" height="200">
         <h1 class="fw-bold">Welcome to My Portfolio</h1>
-        <p class="lead text-secondary">IBM Integration Developer | Infosys | API & Middleware Specialist</p>
+        <p class="lead text-secondary">IBM Integration Bus Developer | Infosys | API & Middleware Specialist</p>
         <a href="#about" class="btn btn-success btn-lg mt-3">Explore More</a>
       </div>
     </div>
-    <div class="carousel-item vh-100 d-flex align-items-center justify-content-center text-center bg-secondary">
+    <div class="carousel-item vh-100 d-flex align-items-center justify-content-center bg-secondary text-center">
       <div>
-        <h1 class="fw-bold text-light">Projects & Achievements</h1>
-        <p class="lead text-light">Integration solutions using IBM IIB, MQ, ACE, SQL & Scripting</p>
+        <h1 class="fw-bold">Projects & Achievements</h1>
+        <p class="lead text-light">IBM Integration Bus, Websphere MQ, ACE, Shell Scripting, CentOS Migrations</p>
         <a href="#projects" class="btn btn-outline-light btn-lg mt-3">View Projects</a>
       </div>
     </div>
-    <div class="carousel-item vh-100 d-flex align-items-center justify-content-center text-center bg-dark">
+    <div class="carousel-item vh-100 d-flex align-items-center justify-content-center bg-dark text-center">
       <div>
-        <h1 class="fw-bold">Let’s Connect</h1>
+        <h1 class="fw-bold">Let's Connect</h1>
         <p class="lead text-secondary">farookroman786@gmail.com | +91 9515561162</p>
         <a href="#contact" class="btn btn-success btn-lg mt-3">Contact Me</a>
       </div>
@@ -68,6 +74,7 @@
   </button>
 </div>
 
+
 <!-- RESUME BUTTON SECTION -->
 <section class="bg-dark text-center py-4 border-top border-secondary">
   <h2 class="text-success fw-bold mb-3">My Resume</h2>
@@ -83,91 +90,415 @@
 
 <!-- MAIN SECTIONS -->
 <main class="bg-dark text-light">
-
   <!-- ABOUT -->
   <section id="about" class="container py-5">
-    <h2 class="text-success fw-bold mb-3">About Me</h2>
-    <p class="lead">
-      Highly motivated IIB Developer with 3+ years of experience designing and maintaining integration systems.
-      Skilled in SOAP-to-REST migration, TLS/SSL setup, and automated MFT processes. Adept in Linux shell scripting,
-      debugging, and API validation using Postman and SoapUI. Collaborative team player with proven leadership in migrations
-      and zero-escalation deployments.
-    </p>
+    <div class = "container">
+   <h2 class="text-success fw-bold mb-3">
+  <i class="bi bi-person-badge-fill me-2"></i> About Me
+</h2>
+    <div class="card bg-secondary text-light border-0 shadow-lg mb-4 experience-card">
+      <div class="card-body p-4">
+<p class="lead" style="line-height:1.9; font-size:1.12rem;">
+  I am a results-driven <strong>IBM Integration Developer</strong> with 3+ years of experience designing and delivering
+  secure, scalable, and high-performance integration solutions using <strong>IIB/ACE, IBM MQ</strong> and
+  enterprise middleware technologies. I specialize in <strong>end-to-end migration projects, SOAP-to-REST modernization, TLS/SSL certificate
+  configuration, MFT automations,</strong> and building reliable message flows that support mission-critical business
+  systems. With a proven track record of <strong>zero-escalation deployments</strong>, strong debugging expertise, and 
+  hands-on skills in <strong>shell scripting and API validation</strong>, I focus on solving complex integration challenges 
+  with precision and ownership. Recognized with multiple awards 🏆 for technical leadership, delivery excellence, and 
+  cross-team collaboration 🤝, I’m passionate about creating seamless integration experiences that enhance operational
+  efficiency and drive organizational success 🚀.
+</p>
+      </div>
+      </div>
+      </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="container py-5">
-    <h2 class="text-success fw-bold mb-3">Skills</h2>
-    <div class="row g-3">
-      <div class="col-md-4"><div class="p-3 bg-secondary rounded">IBM IIB / ACE / MQ</div></div>
-      <div class="col-md-4"><div class="p-3 bg-secondary rounded">SOAP to REST APIs</div></div>
-      <div class="col-md-4"><div class="p-3 bg-secondary rounded">Shell Scripting / Linux</div></div>
-      <div class="col-md-4"><div class="p-3 bg-secondary rounded">SQL Server / DB Integration</div></div>
-      <div class="col-md-4"><div class="p-3 bg-secondary rounded">TLS / SSL / Security</div></div>
-      <div class="col-md-4"><div class="p-3 bg-secondary rounded">Postman / SoapUI Testing</div></div>
+    <h2 class="text-success fw-bold mb-3">
+  <i class="bi bi-tools me-2"></i> Skills
+</h2>
+ <div class="row g-3">
+
+  <!-- Integration Technologies -->
+  <div class="col-md-4">
+    <div class="p-3 bg-secondary rounded shadow-sm d-flex align-items-center">
+      <i class="bi bi-diagram-3 text-success me-3" style="font-size: 1.8rem;"></i>
+      <div>
+        <strong>Integration Platforms</strong><br>
+        IIB 10 · ACE 12/13 · IBM MQ
+      </div>
     </div>
+  </div>
+
+  <!-- API Development -->
+  <div class="col-md-4">
+    <div class="p-3 bg-secondary rounded shadow-sm d-flex align-items-center">
+      <i class="bi bi-cloud-download text-success me-3" style="font-size: 1.8rem;"></i>
+      <div>
+        <strong>API Development</strong><br>
+        SOAP → REST transformations
+      </div>
+    </div>
+  </div>
+
+  <!-- Linux & Scripting -->
+  <div class="col-md-4">
+    <div class="p-3 bg-secondary rounded shadow-sm d-flex align-items-center">
+      <i class="bi bi-terminal text-success me-3" style="font-size: 1.8rem;"></i>
+      <div>
+        <strong>Automation & Scripting</strong><br>
+        Linux · Shell Scripting · Cron Jobs
+      </div>
+    </div>
+  </div>
+
+  <!-- Database Integration -->
+  <div class="col-md-4">
+    <div class="p-3 bg-secondary rounded shadow-sm d-flex align-items-center">
+      <i class="bi bi-hdd-network text-success me-3" style="font-size: 1.8rem;"></i>
+      <div>
+        <strong>Database Integration</strong><br>
+        SQL Server · DB Operations · Joins
+      </div>
+    </div>
+  </div>
+
+  <!-- Security -->
+  <div class="col-md-4">
+    <div class="p-3 bg-secondary rounded shadow-sm d-flex align-items-center">
+      <i class="bi bi-shield-lock-fill text-success me-3" style="font-size: 1.8rem;"></i>
+      <div>
+        <strong>Security & Certificates</strong><br>
+        TLS/SSL · Keystore/Truststore · MQ Security
+      </div>
+    </div>
+  </div>
+
+  <!-- Testing Tools -->
+  <div class="col-md-4">
+    <div class="p-3 bg-secondary rounded shadow-sm d-flex align-items-center">
+      <i class="bi bi-bug-fill text-success me-3" style="font-size: 1.8rem;"></i>
+      <div>
+        <strong>Testing & Validation</strong><br>
+        Postman · SoapUI · Logging & Debugging
+      </div>
+    </div>
+  </div>
+
+</div>
+
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="container py-5">
-    <h2 class="text-success fw-bold mb-3">Projects</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card bg-secondary text-light h-100">
-          <div class="card-body">
-            <h4 class="card-title text-success">myEngage Automation</h4>
-            <p class="card-text">
-              Automated PwC’s client engagement lifecycle using IBM IIB and MQ.
-              Integrated Camunda, ODM, and GFS for seamless workflow automation.
-              Supported 9 core transactions with 5+ applications each.
-            </p>
-            <a href="https://docs.google.com/presentation/d/1dNrSS7wlx5BaVbABM-dLXuqJU6G8pI0I/edit?usp=sharing&ouid=117181550004859386422&rtpof=true&sd=true"
-               class="btn btn-outline-light btn-sm" target="_blank">View PPT</a>
+<section id="projects" class="container py-5">
+  <h2 class="text-success fw-bold mb-3">
+    <i class="bi bi-kanban-fill me-2"></i> Projects
+  </h2>
+
+  <div class="projects-wrapper d-flex align-items-center">
+
+    <!-- LEFT BUTTON -->
+    <button class="projects-btn" id="projLeft">
+      <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <!-- VISIBLE WINDOW -->
+    <div class="projects-carousel">
+      <div class="projects-track" id="projTrack">
+
+        <!-- CARD 1 -->
+        <div class="project-card">
+          <div class="card bg-secondary text-light shadow">
+            <div class="card-body">
+                      <h4 class="card-title text-success d-flex align-items-center">
+          <i class="bi bi-server me-2"></i> CentOS Migration
+        </h4>
+
+        <p class="card-text mt-3">
+  Led the complete migration of <strong>IBM IIB</strong> servers from Ubuntu to CentOS, ensuring <strong>zero downtime</strong> and smooth operations across multiple business units. Built new environments from scratch, configuring 
+  <strong>MQ Queue Managers, WS-Security, SSL/TLS certificates, Global Cache, Policy Sets</strong> and automated tasks via <strong>cron jobs</strong>.
+  </p>
+ <p class="card-text">
+  Oversaw deployment, unit testing, and integration testing for mission-critical applications such as 
+  <strong>myEngage Automation, Ignite, D2,</strong> and <strong>Csod_Cvent</strong>. Utilized tools like 
+  <strong>SQL Server, SOAP UI, Postman, WinSCP, and PuTTY</strong> for validation and troubleshooting.
+  </p>
+ <p class="card-text">
+  Took ownership during resource constraints and delivered the migration with <strong>zero escalations</strong>, earning
+  recognition for technical leadership, coordination, and execution excellence.
+</p>
+<a href="https://docs.google.com/presentation/d/1HTicpUfu2Yn2TqlWAjQdGZaVfhLIy5Pj/edit?usp=sharing&ouid=117181550004859386422&rtpof=true&sd=true"
+          class="btn btn-outline-light btn-sm mt-2" target="_blank">
+          <i class="bi bi-file-earmark-slides me-1"></i> View PPT
+        </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card bg-secondary text-light h-100">
-          <div class="card-body">
-            <h4 class="card-title text-success">CentOS Migration</h4>
-            <p class="card-text">
-              Led IIB server migration from Ubuntu to CentOS ensuring zero downtime.
-              Configured MQ queue managers, SSL certificates, and automated testing for multiple apps.
-            </p>
-            <a href="https://docs.google.com/presentation/d/1HTicpUfu2Yn2TqlWAjQdGZaVfhLIy5Pj/edit?usp=sharing&ouid=117181550004859386422&rtpof=true&sd=true"
-               class="btn btn-outline-light btn-sm" target="_blank">View PPT</a>
+
+        <!-- CARD 2 -->
+        <div class="project-card">
+          <div class="card bg-secondary text-light shadow">
+            <div class="card-body">
+               <h4 class="card-title text-success d-flex align-items-center">
+          <i class="bi bi-gear-wide-connected me-2"></i> myEngage Automation
+        </h4>
+                    <p class="card-text mt-3">
+  Developed enterprise-grade automation flows for PwC’s client engagement lifecycle using 
+  <strong>IIB, IBM MQ</strong> enabling smooth workflow automation and reliable data exchange across auditing and assurance systems.
+  </p>
+<p class="card-text">
+  Supported <strong>9 core business processes</strong>, each integrating with <strong>5+ downstream applications</strong>, 
+  ensuring high accuracy through testing with <strong>SOAP UI, Postman, WinSCP, and PuTTY</strong>.
+  </p>
+<p class="card-text">
+  Improved operational stability by leading end-to-end debugging, analyzing IIB logs, and resolving integration-level issues, 
+  resulting in smoother deployments and enhanced system performance.
+</p>
+        <a href="https://docs.google.com/presentation/d/1dNrSS7wlx5BaVbABM-dLXuqJU6G8pI0I/edit?usp=sharing&ouid=117181550004859386422&rtpof=true&sd=true"
+          class="btn btn-outline-light btn-sm mt-2" target="_blank">
+          <i class="bi bi-file-earmark-slides me-1"></i> View PPT
+        </a>
+            </div>
           </div>
         </div>
+
+        <!-- CARD 3 -->
+        <div class="project-card">
+          <div class="card bg-secondary text-light shadow">
+            <div class="card-body">
+              <h4 class="card-title text-success"><i class="bi bi-cloud-upload me-2"></i> SOAP → REST Migration</h4>
+              <p>Modernized legacy SOAP APIs into lightweight REST services.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="project-card">
+          <div class="card bg-secondary text-light shadow">
+            <div class="card-body">
+              <h4 class="card-title text-success"><i class="bi bi-diagram-3 me-2"></i> MFT Automation</h4>
+              <p>Automated file transfer with shell scripts & secure SFTP.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience" class="container py-5">
-    <h2 class="text-success fw-bold mb-3">Experience</h2>
-    <h4>Technology Analyst — Infosys</h4>
-    <p class="text-secondary">May 2022 – Present | Hyderabad, India</p>
-    <ul>
-      <li>Design and maintain integration flows using IBM IIB, MQ, and ACE.</li>
-      <li>Write optimized ESQL logic across projects (PwC MyEngage, Ignite, Csod Cvent).</li>
-      <li>Automate secure file transfers (MFTP/SFTP) via shell scripting.</li>
-      <li>Collaborate with QA and product teams for end-to-end testing and deployment.</li>
-    </ul>
-  </section>
+    <!-- RIGHT BUTTON -->
+    <button class="projects-btn" id="projRight">
+      <i class="bi bi-chevron-right"></i>
+    </button>
 
-  <!-- EDUCATION -->
-  <section id="education" class="container py-5">
-    <h2 class="text-success fw-bold mb-3">Education</h2>
-    <p>
-      <strong>Bachelor of Technology</strong><br>
-      Jawaharlal Nehru Technological University, Hyderabad<br>
+  </div>
+</section>
+
+
+
+  <!-- ======= Achievements Section ======= -->
+<section id="achievements" class="py-5 bg-dark text-light">
+  <div class="container">
+    <h2 class="text-center mb-5 text-success fw-bold">🏆 Rewards & Achievements</h2>
+
+    <!-- Achievement 1 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="D:\Web development\BootStrap look profile\assets\award1.png" class="img-fluid rounded shadow-lg" alt="Insta Award December 2023">
+      </div>
+      <div class="col-md-6">
+        <h4 class="fw-bold text-success">
+  <i class="bi bi-award-fill me-2"></i> Insta Award — December 2024</h4>
+        <p class="text-muted mb-2">
+          Received the <strong>Insta Award</strong> for exceptional extended support in <strong>CSOD Migration</strong> and <strong>Ignite Projects</strong>.  
+          Recognized for delivering critical integrations within SLA timelines, ensuring smooth migration of APIs and services with zero post-deployment escalations.  
+          Demonstrated strong commitment to teamwork, production stability, and cross-functional coordination.
+        </p>
+        <span class="badge bg-success">2023</span>
+        <a href="https://drive.google.com/file/d/1PwDNt-rkhtWM7__rYpX-sx7pKn1z6OGW/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-sm ms-2">
+          View Certificate
+        </a>
+      </div>
+    </div>
+    
+
+    <!-- Achievement 2 -->
+    <div class="row align-items-center flex-md-row-reverse mb-5">
+      <div class="col-md-6">
+        <img src="D:\Web development\BootStrap look profile\assets\award2.png" class="img-fluid rounded shadow-lg" alt="Insta Award August 2024">
+      </div>
+      <div class="col-md-6">
+        <h4 class="fw-bold text-success">
+  <i class="bi bi-award-fill me-2"></i> Insta Award — August 2024</h4>
+        <p class="text-muted mb-2">
+          Awarded for successfully <strong>driving the CentOS Migration Project</strong> through exceptional technical leadership and coordination.  
+          Led the end-to-end migration of IBM Integration servers from Ubuntu to CentOS with <strong>zero downtime</strong>.  
+          Appreciated for strong problem-solving, communication, and timely delivery across multiple client environments.
+        </p>
+        <span class="badge bg-success">2024</span>
+        <a href="https://drive.google.com/file/d/1oAl0KltEICMnqy0RtPvxBuhbdZSmlYiz/view?usp=sharing" target="_blank" class="btn btn-outline-success btn-sm ms-2">
+          View Certificate
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Experience Section ======= -->
+<section id="experience" class="container py-5">
+  <div class="container">
+    <h2 class="text-success fw-bold mb-3">
+      <i class="bi bi-briefcase-fill me-2"></i> Experience
+    </h2>
+
+    <div class="card bg-secondary text-light border-0 shadow-lg mb-4 experience-card">
+      <div class="card-body p-4">
+        <h4 class="fw-bold text-success">Technology Analyst — Infosys</h4>
+        <p class="text-muted mb-2">May 2022 – Present | Hyderabad, India</p>
+<ul class="mb-0" style="line-height:1.9; font-size:1.05rem;">
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Designed, developed, and maintained enterprise-grade integration flows using 
+    <strong>IBM IIB, ACE, and IBM MQ</strong>, supporting multiple high-impact business domains.
+  </li>
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Implemented complex <strong>ESQL transformations, routing logic,</strong> and reusable subflows across
+    key applications including <strong>myEngage, Ignite, CSOD,</strong> and <strong>Cvent</strong>.
+  </li>
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Led integrations involving <strong>SOAP-to-REST conversions, message enrichment, validation,
+    and mapping</strong> to ensure smooth system interoperability.
+  </li>
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Automated secure file transfer processes (<strong>MFT/SFTP</strong>) and environment activities
+    using <strong>Linux shell scripting</strong>, improving deployment and monitoring efficiency.
+  </li>
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Collaborated closely with QA, onshore SMEs, and product teams to perform 
+    <strong>end-to-end testing, issue triage,</strong> and production readiness checks.
+  </li>
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Managed deployments, TLS/SSL configurations, MQ setup, and environment preparation
+    across <strong>DEV, QA, Pre-Prod, and Production</strong> landscapes.
+  </li>
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Drove incident resolution by performing <strong>deep log analysis, debugging failed payloads,
+    monitoring system health,</strong> and implementing long-term fixes.
+  </li>
+
+  <li>
+    <i class="bi bi-check-circle-fill text-success me-2"></i>
+    Recognized for <strong>delivery excellence, customer focus, leadership,</strong> and maintaining
+    a track record of <strong>zero production escalations</strong>.
+  </li>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Education Section ======= -->
+<section id="education" class="container py-5">
+<div class="card bg-secondary text-light border-0 shadow-lg mb-4 education-card">
+  <div class="card-body p-4">
+
+    <div class="d-flex align-items-center mb-3">
+      <i class="bi bi-mortarboard-fill text-success me-3" style="font-size: 2rem;"></i>
+      <h4 class="fw-bold text-success mb-0">Bachelor of Technology</h4>
+    </div>
+
+    <p class="text-muted mb-1">
+      <i class="bi bi-building me-2"></i>
+      Jawaharlal Nehru Technological University, Hyderabad
+    </p>
+
+    <p class="text-muted mb-3">
+      <i class="bi bi-calendar-event me-2"></i>
       July 2017 – July 2021
     </p>
-  </section>
+</div>
+</div>
+</section>
+
+
+<!-- ======= Certificates Section ======= -->
+<section id="certificates" class="portfolio-section">
+  <div class="container text-center">
+
+    <h2 class="fw-bold mb-5 text-success">🏅 Certifications</h2>
+
+    <div class="cert-wrapper">
+
+      <!-- LEFT BUTTON -->
+      <button class="cert-btn" id="certLeft">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <!-- CAROUSEL VIEWPORT -->
+      <div class="certificate-carousel">
+      <div class="certificate-track" id="certTrack">
+
+  <!-- Certificate 1 -->
+  <a href="https://drive.google.com/file/d/1jjQerSStLNIodnG9GPxN5Y2PgA9LYVEp/view?usp=sharing" target="_blank" class="certificate">
+    <img src="D:\Web development\BootStrap look profile\assets\cert1.jpeg" alt="Generative AI">
+    <p>Generative AI by Microsoft and LinkedIn – 2025</p>
+  </a>
+
+  <!-- Certificate 2 -->
+  <a href="https://drive.google.com/file/d/1G3NztXk6nL23YXwnoNJWCJfnSpE8_zgv/view?usp=sharing" target="_blank" class="certificate">
+    <img src="D:\Web development\BootStrap look profile\assets\cert2.png" alt="Prompt Engineering">
+    <p>Prompt Engineering for Everyone – 2025</p>
+  </a>
+
+  <!-- Certificate 3 -->
+  <a href="https://drive.google.com/file/d/1NB9xOgfxnRSfbXul7HUDVx7kFlOgtEwK/view?usp=sharing" target="_blank" class="certificate">
+    <img src="D:\Web development\BootStrap look profile\assets\cert3.png" alt="SQL and databases">
+    <p>SQL and Relational databases – 2025</p>
+  </a>
+
+  <!-- Certificate 4 -->
+  <a href="https://drive.google.com/file/d/1cHBYkAiiMYB3FEGUzYFR3K-b7TY08m8m/view?usp=sharing" target="_blank" class="certificate">
+    <img src="D:\Web development\BootStrap look profile\assets\cert4.png" alt="Boomi Integration">
+    <p>Associate Integration developer – 2024</p>
+  </a>
+
+</div>
+</div>
+      <!-- RIGHT BUTTON -->
+      <button class="cert-btn" id="certRight">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
 
   <!-- CONTACT -->
   <section id="contact" class="container py-5">
-    <h2 class="text-success fw-bold mb-3">Contact</h2>
+    
+    <h2 class="fw-bold text-success">
+        <i class="bi bi-envelope-fill me-2" aria-hidden="true"></i> Contact </h2>
+    <div class="card bg-secondary text-light border-0 shadow-lg mb-4 experience-card">
+    <div class="card-body p-4">
     <p>Email: <a href="mailto:farookroman786@gmail.com" class="text-success">farookroman786@gmail.com</a></p>
     <p>Phone: +91 95155 61162</p>
     <p>
@@ -175,6 +506,9 @@
       <a href="https://www.naukri.com/mnjuser/profile/view?id=MOHAMMAD%20FAROOK%20PASHA" target="_blank" class="text-success">Naukri</a> |
       <a href="https://drive.google.com/drive/folders/1NKJc16EBl6fECh18FI9HQgZoZG_ZWMW7?usp=sharing" target="_blank" class="text-success">Drive</a>
     </p>
+    </div>
+    </div>
+    
   </section>
 
 </main>
@@ -190,13 +524,41 @@
   <small>© <span id="year"></span> Farook Mohammad — All rights reserved.</small>
 </footer>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+let certIndex = 0;
+
+const track = document.querySelector(".certificate-track");
+const certs = document.querySelectorAll(".certificate");
+const leftBtn = document.getElementById("certLeft");
+const rightBtn = document.getElementById("certRight");
+
+function updateCarousel() {
+  const cardWidth = certs[0].offsetWidth + 25; 
+  track.style.transform = `translateX(-${certIndex * cardWidth}px)`;
+}
+
+// Right Scroll
+rightBtn.addEventListener("click", () => {
+  certIndex = (certIndex + 1) % certs.length;
+  updateCarousel();
+});
+
+// Left Scroll
+leftBtn.addEventListener("click", () => {
+  certIndex = (certIndex - 1 + certs.length) % certs.length;
+  updateCarousel();
+});
+
+// Auto-scroll
+setInterval(() => {
+  certIndex = (certIndex + 1) % certs.length;
+  updateCarousel();
+}, 4000);
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+
 </body>
 </html>
-
-

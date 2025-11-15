@@ -412,38 +412,61 @@ a:hover {
   border-radius: 10px;
 }
 /* Mobile */
-/* === MOBILE PROJECT FIX (Full working) === */
+/* === MOBILE PROJECT FIX WITH BUTTONS VISIBLE === */
 @media (max-width: 768px) {
 
-    /* Make projects scrollable with finger */
+    /* Make projects scroll with finger AND buttons */
     .projects-carousel {
-        overflow-x: scroll !important;
-        scroll-behavior: smooth;
-        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden; /* prevent weird shifting */
+        position: relative;
     }
 
-    /* Track becomes row scrolling */
+    /* Track layout */
     .projects-track {
         display: flex;
-        flex-wrap: nowrap;
-        gap: 15px;
+        gap: 18px;
+        transition: transform 0.4s ease;
     }
 
-    /* Each card takes 85% width (clean, readable) */
+    /* Bigger readable cards */
     .project-card {
         flex: 0 0 85%;
         min-width: 85%;
         max-width: 85%;
         height: auto !important;
+        padding: 20px !important;
         white-space: normal;
     }
 
-    /* Hide navigation arrows on mobile */
+    /* Show both navigation buttons on mobile */
     #projLeft,
     #projRight {
-        display: none !important;
+        display: flex !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: rgba(110,231,183,0.15);
+        border: 1px solid rgba(110,231,183,0.4);
+        color: #6ee7b7;
+        font-size: 1.4rem;
+        align-items: center;
+        justify-content: center;
     }
+
+    #projLeft {
+        left: 5px;
+    }
+    #projRight {
+        right: 5px;
+    }
+
 }
+
+
 
 
 

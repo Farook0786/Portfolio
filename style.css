@@ -28,6 +28,7 @@ body {
     transform: translateY(-2px);
 }
 
+
 /* Navbar links */
 .navbar-nav .nav-link {
     font-size: 1.05rem;
@@ -328,42 +329,78 @@ a:hover {
 
 /* === PROJECTS SLIDER === */
 
-/* Wrapper */
+
+/* === PROJECTS SLIDER (CLEAN + FIXED) === */
+
 .projects-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.projects-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-card {
+    display: flex;
+    width: 48%;
+    min-width: 48%;
+    max-width: 48%;
+    height: 500px;
+    margin-right: 30px;
+    vertical-align: top;
+    white-space: normal;
+    flex-direction: column;
+}
+
+.projects-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(110,231,183,0.1);
+  border: 1px solid rgba(110,231,183,0.4);
+  color: #6ee7b7;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  transition: 0.3s ease;
+  font-size: 1.4rem;
+}
+.project-card .btn {
+    position: sticky;
+    bottom: 0;
+    margin-top: 10px;
+    z-index: 10;
+    background: #1f2937;
+    padding: 8px 14px;
+} 
+.projects-btn:hover {
+  background: rgba(110,231,183,0.3);
+  transform: scale(1.15);
 }
 
-/* Carousel viewport */
-.projects-carousel {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Track */
-.projects-track {
-  display: flex;
-  gap: 30px;          /* ⭐ Add spacing between cards */
-  transition: transform 0.5s ease-in-out;
-  padding: 10px;
-}
-
-/* Individual project card */
-.project-card {
-  width: 48%;           /* ⭐ Two cards per row */
-  min-width: 48%;       /* ⭐ Important for slider movement */
-  height: 500px;        /* ⭐ FIXED HEIGHT for all cards */
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 20px;
+.project-slider {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
 }
 
 /* Ensure content scrolls only inside, not break layout */
 .project-card .card-body {
-  overflow-y: auto;
-  padding-right: 10px;
+    flex: 1;
+    overflow-y: auto;       /* allows scrolling ONLY inside content */
+    padding-right: 8px;
+    padding-bottom: 60px; 
 }
 
 /* Scrollbar styling (optional) */
@@ -374,23 +411,7 @@ a:hover {
   background: #6ee7b7;
   border-radius: 10px;
 }
-
-/* Navigation buttons */
-.projects-btn {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background: rgba(110,231,183,0.1);
-  border: 1px solid rgba(110,231,183,0.4);
-  color: #6ee7b7;
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-/* Mobile Fix for Project Cards */
+/* Mobile */
 /* === FINAL MOBILE FIX FOR PROJECTS === */
 @media (max-width: 768px) {
 
@@ -421,6 +442,11 @@ a:hover {
         display: none;
     }
 }
+
+
+
+
+
 
 
 

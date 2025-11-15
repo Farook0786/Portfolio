@@ -67,14 +67,6 @@ projLeft.addEventListener("click", () => {
   updateProjects();
 });
 
-// Auto-scroll
-setInterval(() => {
-  projIndex = (projIndex + 1) % projCards.length;
-  updateProjects();
-}, 5000);
-
-
-
 
 // === CERTIFICATES CAROUSEL ===
 let certIndex = 0;
@@ -104,3 +96,4 @@ setInterval(() => {
   certIndex = (certIndex + 1) % certItems.length;
   updateCertificateCarousel();
 }, 4000);
+

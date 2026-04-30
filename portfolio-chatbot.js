@@ -4,7 +4,7 @@
     ownerName: "Farook Mohammad",
     role: "IBM Integration Developer",
     email: "farookroman786@gmail.com",
-    whatsappNumber: "916301244261",
+    whatsappNumber: "919515561162",
     inactivityLimitMs: 120000,
     resumeKeywords: ["resume", "cv", "curriculum vitae", "download resume", "download cv", "view resume", "view cv", "show resume", "show cv", "open resume", "open cv", "get resume", "get cv", "share resume", "share cv", "profile", "professional profile", "work profile"],
 
